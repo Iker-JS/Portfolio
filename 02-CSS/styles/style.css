@@ -1,0 +1,13 @@
+body{
+    background: #87c;
+}
+div{
+    background: skyblue;
+}
+
+
+img{
+    border: 2px solid;
+    width: 120px;
+    height: 120px;
+}
