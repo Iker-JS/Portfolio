@@ -23,10 +23,21 @@
             <li><a href="destination.html#banff">Banff</a></li>
             <li><a href="destination.html#kyoto">Kyoto</a></li>
         </ul>
+
+        <p>These are my html ans css desings</p>
+        <ul>
+            <li><a href="diagonal1.html">Diagonal 1</a></li>
+            <li><a href="diagonal2.html">Diagonal 2</a></li>
+            <li><a href="romania.html">Romania</a></li>
+            <li><a href="mondrian_effect.html">Mondrian Effect</a></li>
+        </ul>
+        
         <p>Or see my familyes <a href="#bdays">birtdays</a></p>
 
     </div>
     
+
+
     <div>
         <h2>Background</h2>
         <p>I will like to be a cybersecurity master or a data science guy.</p>
@@ -36,13 +47,13 @@
         <h2>Education</h2>
             <ul>
                 <li><b>2009-2014:</b> <em>Colegio Medrano</em></li>
-                <img src="./images/logos/cm.jpg" alt="Colegio Medrano Logo"/>
+                <img class="logos" src="./images/logos/cm.jpg" alt="Colegio Medrano Logo"/>
                 <li><b>2014-2019:</b> <em>Colegio Martinez Negrete</em></li>
-                <img src="./images/logos/mn.jpg" alt="Colegio Martinez Negrete Logo"/>
+                <img class="logos" src="./images/logos/mn.jpg" alt="Colegio Martinez Negrete Logo"/>
                 <li><b>2019-2023:</b> <em>Colegio Anahuac Revolución</em></li>
-                <img src="./images/logos/ar.jpg" alt="Colegio Anahuac Revolución Logo"/>
+                <img class="logos" src="./images/logos/ar.jpg" alt="Colegio Anahuac Revolución Logo"/>
                 <li><b>2023-2024:</b> <em>Universidad Panamericana de Guadalajara</em></li>
-                <img src="./images/logos/up.jpg" alt="Universidad Panamericana Logo"/>
+                <img class="logos" src="./images/logos/up.jpg" alt="Universidad Panamericana Logo"/>
                 
             </ul>
     </div>
@@ -160,48 +171,54 @@
 
     <div>
         <h2>Heroes/Writers/Musicians</h2>
-        <table border="1">
-            <thead>
 
-                <tr>
-                    <th>Picture</th>
-                    <th>Name</th>
-                    <th>Date of Birth / Date of Death</th>
-                    <th>Profession</th>
-                    <th>Achievements / Famous Work</th>
-                </tr>
+        <div class="row">
+            <div class="column">
+                   <div class="card">
+                    <img src="./images/people/malala.webp" alt="Malala Yousafzai" style="width:100%">
+                    <div class="container">
+                        <h2>Malala Yousafzai</h2>
+                        <p class="title">Activist</p>
+                        <p><b>July 12, 1997</b></p>
+                        <p>She is the youngest person to receive the Nobel Peace Prize (2014), for her fight against the oppression of children and women and their right to education. <br> Founder of the Malala Fund, an organization that promotes girls' education around the world.</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="column">
+                <div class="card">
+                    <img src="./images/people/haruki_murakami.webp" alt="Haruki Murakami" style="width:100%">
+                    <div class="container">
+                        <h2>Haruki Murakami</h2>
+                        <p class="title">Writter</p>
+                        <p><b>January 12, 1949</b></p>
+                        <p>Renowned for novels such as Norwegian Wood, Kafka on the Shore and 1Q84. <br> He has been awarded prestigious literary prizes, such as the Franz Kafka Prize (2006) and the Jerusalem Prize (2009). <br> Considered one of the most influential contemporary authors, his works have been translated into more than 50 languages.</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="column">
 
-            </thead>
-
-            <tbody>
+                <div class="card">
+                    <img src="./images/people/ed_sheeran.webp" alt="Ed Sheeran" style="width:100%">
                 
-                <tr>
-                    <td><img src="images/people/malala.webp" alt="Malala Yousafzai"></td>
-                    <td>Malala Yousafzai</td>
-                    <td>July 12, 1997</td>
-                    <td>Activist</td>
-                    <td>She is the youngest person to receive the Nobel Peace Prize (2014), for her fight against the oppression of children and women and their right to education. <br> Founder of the Malala Fund, an organization that promotes girls' education around the world.</td>
-                </tr>
-                <tr>
-                    <td><img src="images/people/haruki_murakami.webp" alt="Haruki Murakami"></td>
-                    <td>Haruki Murakami</td>
-                    <td>January 12, 1949</td>
-                    <td>Writer</td>
-                    <td>Renowned for novels such as Norwegian Wood, Kafka on the Shore and 1Q84. <br> He has been awarded prestigious literary prizes, such as the Franz Kafka Prize (2006) and the Jerusalem Prize (2009). <br> Considered one of the most influential contemporary authors, his works have been translated into more than 50 languages.</td>
-                </tr>
-                <tr>
-                    <td><img src="images/people/ed_sheeran.webp" alt="Ed Sheeran"></td>
-                    <td>Ed Sheeran</td>
-                    <td>February 17, 1991</td>
-                    <td>Musician</td>
-                    <td>He has won multiple Grammy Awards, including Best Song of the Year for "Thinking Out Loud" (2016). <br> He is known for hits such as "Shape of You," "Perfect," and "Castle on the Hill." <br> His albums have achieved multimillion-dollar sales worldwide.</td>
-                </tr>
-            </tbody>
-        </table>
-        <hr>
+                    <div class="container">
+                        <h2>Ed Sheeran</h2>
+                        <p class="title">Musician</p>
+                        <p><b>February 17, 1991</b></p>
+                        <p>He has won multiple Grammy Awards, including Best Song of the Year for "Thinking Out Loud" (2016). <br> He is known for hits such as "Shape of You," "Perfect," and "Castle on the Hill." <br> His albums have achieved multimillion-dollar sales worldwide.</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
 
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div>
         <table border="1">
-
             <thead>
                 <tr>
                     <th>Date</th>
@@ -235,7 +252,7 @@
                     <td></td>
                     <td>🟢 Free</td>
                 </tr>
-                <tr>
+                    <tr>
                     <td>Wednesday</td>
                     <td>02:00 PM</td>
                     <td>03:00 PM</td>
@@ -247,8 +264,6 @@
                 </tr>
             </tbody>
         </table>
-
-
     </div>
 
     
@@ -303,6 +318,20 @@
 
         </form>
     </div>
+
+    <div id="animation">
+        <div id="clouds">
+            <img src="./images/animation/cloud.png" alt="cloud" id="cloud1">
+            <img src="./images/animation/cloud.png" alt="cloud" id="cloud2">
+        </div>
+
+        <div id="mountain_container">
+            <img src="./images/animation/mountain.png" alt="mountain" id="mountain">
+        </div>
+
+
+    </div>
+
 
 </body>
 </html>
