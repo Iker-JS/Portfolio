@@ -1,19 +1,19 @@
 // script.js
 
     
-    //COMMENT: step 7
+    //step 7
     let anyKey = false;
     let level = 0;
 
-    //COMMENT: step 6
+    //step 6
     let started = false;
 
-    //COMMENT: step 5
+    //step 5
     let globalColors = ['red', 'green', 'blue', 'yellow'];
     let gamePattern = [];
     let userClickedPattern  = [];
     
-    //COMMENT: step 4
+    //step 4
     function nextSequence(){
         userClickedPattern = [];
         level++;
@@ -54,13 +54,13 @@
         
         else {
             // If the user makes a mistake
-            playSound('wrong');  // Play the wrong sound
+            playSound('wrong');  
             
             // Apply the game-over style to the body
             $('body').addClass('game-over');
             setTimeout(function () {
-                $("body").removeClass('game-over');
-            }, 200);  // Remove it after 200ms
+                $('body').removeClass('game-over');
+            }, 200);
     
             // Update the heading to show the game over message
             updateTitle('Game over, Press Any Key to Restart');
@@ -107,7 +107,7 @@
             }
         }
         
-        //COMMENT: el juego ya fue iniciado una vez por lo que ahora se puede precionar cualquier tecla
+        //The game has already been started once so any key can now be pressed.
 
         else if (!started && anyKey){
             started = true;
