@@ -54,13 +54,13 @@
         
         else {
             // If the user makes a mistake
-            playSound('wrong');  
+            playSound('wrong');  // Play the wrong sound
             
             // Apply the game-over style to the body
             $('body').addClass('game-over');
             setTimeout(function () {
-                $('body').removeClass('game-over');
-            }, 200);
+                $("body").removeClass('game-over');
+            }, 200);  // Remove it after 200ms
     
             // Update the heading to show the game over message
             updateTitle('Game over, Press Any Key to Restart');
@@ -131,6 +131,7 @@
             animatePress(buttonID);
             playSound(buttonID);
             checkAnswer(userClickedPattern.length - 1);
+            // pass the last clicked index
 
         }
     });
