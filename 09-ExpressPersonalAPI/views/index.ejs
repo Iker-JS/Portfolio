@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Test</title>
+</head>
+<body>
+
+    <% if (locals.error) { %>
+        <h3>
+            <%= error %>
+        </h3>
+    <% } %>
+    
+    <form action="/greet" method="get">
+        Register:
+        <input type="text" name="name" placeholder="Name">
+        <input type="submit" value="Go Next">
+    </form>
+
+    <% if (locals.names.length) { %>
+        <ul>
+            <% names.forEach(name => { %>
+                <li><a href="/wazzup/<%= name %>"><%= name %></a></li>
+            <% }) %>
+        </ul>
+    <% } %>
+
+    <h3>TODO List</h3>
+    <form action="/task" method="post">
+        <input type="text" name="task" placeholder="New task">
+        <button type="submit">Add Task</button>
+    </form>
+
+    <% if (locals.tasks.length) { %>
+        <ul>
+            
+            <% tasks.forEach((task, index) => { %>
+                <li>
+                    <%= task %>
+                    
+                    <form action="/task/delete/<%= index %>" method="post" style="display:inline;">
+                        <button type="submit">Delete</button>
+                    </form>
+                    
+                    <form action="/task/up/<%= index %>" method="post" style="display:inline;">
+                        <button type="submit">⬆</button>
+                    </form>
+                    
+                    <form action="/task/down/<%= index %>" method="post" style="display:inline;">
+                        <button type="submit">⬇</button>
+                    </form>
+
+                </li>
+            <% }) %>
+
+        </ul>
+    <% } %>
+</body>
+</html>
+
+
