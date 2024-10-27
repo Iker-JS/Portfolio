@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Personal Website - JS</title>
+        <script type="text/javascript" src="js/server.js"></script>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h2>Forms</h2>
+                <form action="" method="" id="form">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required />
+                    <hr />
+
+                    <label for="start_time">Time Start:</label>
+                    <input
+                        type="time"
+                        id="start_time"
+                        name="start_time"
+                        required
+                    />
+                    <hr />
+
+                    <label for="end_time">Time End:</label>
+                    <input type="time" id="end_time" name="end_time" required />
+                    <hr />
+
+                    <label for="activity">Activity:</label>
+                    <input type="text" id="activity" name="activity" required />
+                    <hr />
+
+                    <label for="place">Place:</label>
+                    <input type="text" id="place" name="place" required />
+                    <hr />
+
+                    <label for="type">Type:</label>
+                    <select id="type" name="type" required>
+                        <option value="school">School</option>
+                        <option value="personal">Personal</option>
+                        <option value="professional">Professional</option>
+                        <option value="familiar">Familiar</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <hr />
+
+                    <label for="notes">Notes:</label><br />
+                    <textarea
+                        id="notes"
+                        name="notes"
+                        rows="4"
+                        cols="50"
+                    ></textarea>
+                    <hr />
+
+                    <label for="flag">Flag Color:</label>
+                    <input
+                        type="color"
+                        id="color"
+                        name="flag"
+                        value="#ff0000"
+                    />
+                    <hr />
+
+                    <label for="free_busy">Free/Busy:</label>
+                    <input type="checkbox" id="free_busy" name="free_busy" />
+                    <hr />
+
+                    <button type="button" onclick="sumitInfo(event)">
+                        Submit
+                    </button>
+                </form>
+
+                <div>
+                    <table id="table" border="1">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Start</th>
+                                <th>End</th>
+                                <th>Description</th>
+                                <th>Place</th>
+                                <th>Type</th>
+                                <th>Activity</th>
+                                <th>Status</th>
+                                <th>Notes</th>
+                                <th>Color</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody></tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
