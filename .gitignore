@@ -5,4 +5,3 @@ express_test/
 node_test/
 node_modules/
 package-lock.json
-package.json

@@ -1,0 +1,28 @@
+{
+  "name": "07-basicnode",
+  "version": "1.0.0",
+  "description": "07_BasicNode",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iker-JS/Portfolio.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Iker Jesus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iker-JS/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Iker-JS/Portfolio#readme",
+  "dependencies": {
+    
+    "star-wars-quotes": "^1.0.2",
+    "superheroes": "^4.0.0"
+  }
+}
