@@ -1,0 +1,51 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: beige !important;
+}
+
+
+.blog_title{
+
+    width: 200px;
+    height: 30px;
+}
+
+.blog_description{
+
+    width: 200px;
+    height: 150px;
+
+}
+
+
+.forums_page_title{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.forums_container{
+
+    overflow-y: scroll;
+    width: auto;
+    height:auto;
+    background: #000;
+    
+
+}
+
+.forum{
+    overflow-x: scroll;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+    background-color: white;
+
+}
