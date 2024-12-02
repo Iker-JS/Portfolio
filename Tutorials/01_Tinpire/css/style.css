@@ -1,19 +1,102 @@
 .gradient-background {
-  background: linear-gradient(300deg, #feffff, #070100, #ff4c68);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+    background: linear-gradient(300deg, #feffff, #070100, #ff4c68);
+    background-size: 180% 180%; 
+    animation: gradient-animation 18s ease infinite;
+    padding: 0;
+}
+
+
+#buttons{
+    display: inline-block;
+    text-align: left;
+}
+
+#title-goal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5px;
+}
+
+#prices-continer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.icon-container{
+    background-color: #eeeeee;
+    border-radius: 16%;
+    padding: 4px;
+}
+
+
+
+#testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#column-testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+#pilot{
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    border-radius: 50%;
+
+}
+
+.row-md-4 > img{
+
+    height: 90px;
+}
+
+#features-container{
+    text-align: left;
+}
+
+
+#footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#footer-content {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+}
+
+#footer-content > div {
+    flex: 1; /* Hace que cada sección tenga tamaños similares */
 }
 
 @keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
+    0% {
+        background-position: 0% 50%;
+    }
 
-  50% {
-    background-position: 100% 50%;
-  }
+    50% {
+        background-position: 100% 50%;
+    }
 
-  100% {
-    background-position: 0% 50%;
-  }
+    100% {
+        background-position: 0% 50%;
+    }
 }
